@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css"> 
+	<title>9-Piece Puzzle</title>
+</head>
+	
+<body>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/game_sample.js"></script>
+
+    <section id="game1" data-role="page" class="bgimg game1" data-dom-cache="true">
+        <section data-role="header" data-position="fixed" data-theme="a" data-tap-toggle="false" id="boxheader">
+            <h3 id='aa' >9-Piece Puzzle</h3>
+		    <table id="t01">
+			  <tr>
+			    <td id="tap_num">Steps：<i>0</i> &nbsp;&nbsp;&nbsp;</td>
+				<td id="play_time">Timing：<i>0</i> </td>
+			  </tr>
+			</table>
+			
+			
+        </section>
+		
+        <!-- 拼圖內容  -->
+        <section data-role="main" class="ui-content">
+            <section id="box_area" class="box_area">
+                <section id="box1" class="box" data-box="1" data-check="1">&nbsp;1</section>
+                <section id="box2" class="box" data-box="2" data-check="2">&nbsp;2</section>
+                <section id="box3" class="box" data-box="3" data-check="3">&nbsp;3</section>
+                <section id="box4" class="box" data-box="4" data-check="4">&nbsp;4</section>
+                <section id="box5" class="box" data-box="5" data-check="5">&nbsp;5</section>
+                <section id="box6" class="box" data-box="6" data-check="6">&nbsp;6</section>
+                <section id="box7" class="box" data-box="7" data-check="7">&nbsp;7</section>
+                <section id="box8" class="box" data-box="8" data-check="8">&nbsp;8</section>
+                <section id="box9" class="box" data-box="9" data-check="9"></section>
+            </section>
+        </section>
+		
+        <section data-position="fixed" data-role="footer" data-theme="a" data-tap-toggle="false" style="padding:0; height:60px;">
+            <section class="ui-grid-c" style="height:100%; margin:0; padding:0">
+			    <section class="ui-block-b" style="height:100%; width:34%;margin:0;padding:0;">
+                    <a id="btn_exit" class="ui-btn ui-btn-icon-top ui-icon-eye" style="height:100%; width:100%; padding:0; line-height:80px; margin:0;">Exit</a>
+                </section> 
+                <section class="ui-block-b" style="height:100%; width:33%;margin:0;padding:0;">
+                    <a id="btn_play" class="ui-btn ui-btn-icon-top ui-icon-eye" style="height:100%; width:100%; padding:0; line-height:80px; margin:0;">Start Game</a>
+                </section>                
+                <section class="ui-block-c" style="height:100%;width:33%;">
+                    <a id="btn_restart" class="ui-btn ui-icon-refresh ui-btn-icon-top" style="height:100%; width:100%; padding:0; line-height:80px; margin:0;">Restart</a>
+                </section>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
+
